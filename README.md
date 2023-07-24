@@ -11,7 +11,7 @@ Welcome to my website! I'm a software engineering student, and this is where I'l
 ## Technologies Used
 
 -   React.js: A JavaScript library for building user interfaces
--   Vercel: Platform to deploy websites
+-   Netlify: Platform to deploy websites
 -   Next.js: A framework for building server-rendered React applications
 -   Chakra UI: A React UI framework for building accessible and customizable
     user interfaces
