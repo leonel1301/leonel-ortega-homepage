@@ -3,7 +3,6 @@ import Layout from '../components/layouts/main';
 import { AnimatePresence } from 'framer-motion';
 import theme from '../lib/theme';
 import Fonts from '../components/fonts';
-import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps, router }) {
     return (
@@ -16,7 +15,6 @@ function MyApp({ Component, pageProps, router }) {
                     </AnimatePresence>
                 </Layout>
             </ChakraProvider>
-            <Analytics />
         </>
     );
 }
