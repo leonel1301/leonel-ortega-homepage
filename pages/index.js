@@ -167,14 +167,14 @@ const Home = () => {
                         </Link>
                         <Paragraph>
                             As a Software Developer, I focus on improving internal processes and enhancing
-                            user experiences. My work includes creating engaging landing pages, optimizing 
-                            the company's online presence, and developing tools that streamline operations 
-                            for the team. I’ve also contributed to integrating key services, providing additional 
-                            options for customers during their transactions, and ensuring seamless communication 
-                            with clients. My role involves balancing technical excellence with business needs, 
+                            user experiences. My work includes creating engaging landing pages, optimizing
+                            the company's online presence, and developing tools that streamline operations
+                            for the team. I’ve also contributed to integrating key services, providing additional
+                            options for customers during their transactions, and ensuring seamless communication
+                            with clients. My role involves balancing technical excellence with business needs,
                             helping the company achieve its goals efficiently.
                         </Paragraph>
-                        <AditionalSection>Key Technologies: ASP.NET Core, .NET 8, Azure Functions, Entity Framework, 
+                        <AditionalSection>Key Technologies: ASP.NET Core, .NET 8, Azure Functions, Entity Framework,
                             React, JavaScript, JQuery, SendGrid, SQL Server.</AditionalSection>
                     </BioSection>
                     <BioSection>
@@ -246,17 +246,17 @@ const Home = () => {
                     </Section>
 
                     <BioSection>
-                        <BioYear>2023 - Current</BioYear>
-                        Bachelor Degree Semester: V at {' '}
+                        <BioYear>2023 - 2024</BioYear>
+                        Bachelor Degree Semester: V and VI at {' '}
                         <Link href='https://upc.edu.pe/' isExternal>
                             UPC
                         </Link>
                         <Paragraph>
-                            I have finished my 5th semester at the university and thanks to the knowledge
-                            of databases, ihc and software patterns, in this semester I was able to learn
-                            frameworks for both frontend and backend. In the course of Open Source Applications
-                            I learned Angular, TS and Spring Boot Framework, on the side of Web Applications I
-                            learned Vue, Js and C.NET Framework. It was a semester of a lot of knowledge.
+                            During my third year, I studied databases, HCI, software design patterns, and algorithmic complexity.
+                            I also gained experience with both frontend and backend frameworks. In the Open Source Applications
+                            course, I learned Angular, TypeScript, and Spring Boot Framework. In the Web Applications course,
+                            I worked with Vue, JavaScript, and the C#.NET Framework. Additionally, in the Algorithmic Complexity
+                            course, I developed applications using Python. It was a semester filled with valuable knowledge.
                         </Paragraph>
                     </BioSection>
 
