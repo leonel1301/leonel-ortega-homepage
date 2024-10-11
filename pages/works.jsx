@@ -7,6 +7,10 @@ import thumbHero from '../public/images/extinct-hero.png';
 import thumbFreelancer from '../public/images/works/freelancer-landing-page-01.png';
 import thumbStudyUp from '../public/images/works/studyUp_01.png';
 import thumbCriptografia from '../public/images/works/criptografia-rsa_01.png';
+import restApi from '../public/images/works/rest-api.jpg';
+import express from '../public/images/works/express.png';
+import pokeapi from '../public/images/works/pokeapi.png';
+import rickandmorty from '../public/images/works/rick-and-morty-1.png';
 import Layout from '../components/layouts/article';
 
 const Works = () => {
@@ -31,7 +35,35 @@ const Works = () => {
                         thumbnail={thumbCriptografia}
                     >
                         RSA Cryptography university project using HTML, CSS and JavaScript.
-                </WorkGridItem>   
+                </WorkGridItem>
+                <WorkGridItem
+                        id="forever-pets-home"
+                        title="Rest API Forever Pets Home"
+                        thumbnail={restApi}
+                    >
+                        Rest Api with .NET Framework and Clean Architecture
+                </WorkGridItem>
+                <WorkGridItem
+                        id="todo-app-express"
+                        title="Rest API Todo Tasks"
+                        thumbnail={express}
+                    >
+                        Rest Api with Express.js Framework
+                </WorkGridItem>
+                <WorkGridItem
+                        id="pokeapi-app"
+                        title="Pokeapi with React and Vite"
+                        thumbnail={pokeapi}
+                    >
+                        Frontend Project with React.js
+                </WorkGridItem>
+                <WorkGridItem
+                        id="rick-and-morty"
+                        title="Rick and Morty App with Vue.js"
+                        thumbnail={rickandmorty}
+                    >
+                        Frontend Project with Vue.js
+                </WorkGridItem>
                 </SimpleGrid>
 
                 <Section delay={0.2}>
