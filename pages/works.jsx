@@ -11,6 +11,7 @@ import restApi from '../public/images/works/rest-api.jpg';
 import express from '../public/images/works/express.png';
 import pokeapi from '../public/images/works/pokeapi.png';
 import rickandmorty from '../public/images/works/rick-and-morty-1.png';
+import smartsprout from '../public/images/works/smartsprout.jpg';
 import Layout from '../components/layouts/article';
 
 const Works = () => {
@@ -85,6 +86,13 @@ const Works = () => {
                         thumbnail={thumbLywAw}
                     >
                         Website with Vue in frontend and C.NET Framework in Backend.
+                    </WorkGridItem>
+                    <WorkGridItem
+                        id="smartsprout-iot-app"
+                        title="SmartSprout IoT App"
+                        thumbnail={smartsprout}
+                    >
+                        Website with React in frontend, Java in the backend and IoT integration with Wokwi.
                     </WorkGridItem>
                     
                 </SimpleGrid>

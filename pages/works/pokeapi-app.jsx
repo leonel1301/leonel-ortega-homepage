@@ -31,6 +31,15 @@ const PokeApp = () => {
         </Paragraph>
         <List ml={4} my={4}>
           <ListItem>
+            <Meta>Website</Meta>
+            <Link
+              href="https://react-pockeapi-ibumum3ne-leonel1301s-projects.vercel.app"
+              isExternal
+            >
+              poke-app <ExternalLinkIcon mx="2px" />
+            </Link>
+          </ListItem>
+          <ListItem>
             <Meta>Source</Meta>
             <Link
               href="https://github.com/leonel1301/react-pockeapi"

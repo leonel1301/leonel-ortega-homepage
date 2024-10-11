@@ -12,3 +12,8 @@ export const BioYear = styled.span`
     color: 'dark';
 `;
 
+export const ProfessionSection = styled.span`
+    margin-right: 1em;
+    color: #90CDF4;
+`;
+
