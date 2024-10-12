@@ -18,6 +18,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { useRouter } from 'next/router';
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
@@ -42,6 +43,7 @@ const Navbar = (props) => {
   const linkColor = useColorModeValue('gray.700', 'gray.400');
   const bgColor = useColorModeValue('', '');
   const contentColor = useColorModeValue('gray.800', 'gray.200');
+  const router = useRouter();
   return (
     <Box
       position="fixed"
@@ -80,6 +82,9 @@ const Navbar = (props) => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
+          <LinkItem href="/posts" path={path}>
+            Posts
+          </LinkItem>
 
           <Link
             isExternal
@@ -106,11 +111,14 @@ const Navbar = (props) => {
                 variant="outline"
               />
               <MenuList>
-                <Link as={NextLink} color={linkColor} href="/" passHref>
+                <Link as={NextLink} href="/" passHref color={linkColor}>
                   <MenuItem>About</MenuItem>
                 </Link>
                 <Link as={NextLink} href="/works" passHref color={linkColor}>
                   <MenuItem>Works</MenuItem>
+                </Link>
+                <Link as={NextLink} href="/posts" passHref color={linkColor}>
+                  <MenuItem>Posts</MenuItem>
                 </Link>
                 <Link
                   isExternal
