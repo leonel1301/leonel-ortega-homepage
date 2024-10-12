@@ -141,7 +141,7 @@ const Home = () => {
                         </Link>
                     </BioSection>
                     <BioSection>
-                        <BioYear>october, 2024</BioYear>First job! <Link href='https://x.com/search?q=%23primerachamba&src=typed_query' isExternal>#primerachamba</Link>
+                        <BioYear>october, 2023</BioYear>First job! <Link href='https://x.com/search?q=%23primerachamba&src=typed_query' isExternal>#primerachamba</Link>
                     </BioSection>
                 </Section>
 
