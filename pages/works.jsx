@@ -12,6 +12,7 @@ import express from "../public/images/works/express.png";
 import pokeapi from "../public/images/works/pokeapi.png";
 import rickandmorty from "../public/images/works/rick-and-morty-1.png";
 import smartsprout from "../public/images/works/smartsprout.jpg";
+import belcorp from "../public/images/works/belcorp-hackathon.webp";
 import Layout from "../components/layouts/article";
 
 const Works = () => {
@@ -96,11 +97,18 @@ const Works = () => {
               Website with React in frontend, Java in the backend and IoT
               integration with Wokwi.
             </WorkGridItem>
+            <WorkGridItem
+              id="belcorp-hackathon-ai"
+              title="AI-Powered App for Belcorp's Hackathon 2024"
+              thumbnail={belcorp}
+            >
+              WhatsApp bot that uses AI to provide personalized recommendations
+              to customers and processes images to suggest makeup options.
+            </WorkGridItem>
           </SimpleGrid>
         </Section>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}></SimpleGrid>
-
         <Section delay={0.2}>
           <Divider my={6} />
           <Heading as="h3" fontSize={20} mb={4}>
