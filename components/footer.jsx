@@ -47,7 +47,7 @@ function Footer() {
                 color="gray.500"
                 fontSize={'0.8rem'}
             >
-                <Text>© 2023 Leonel Ortega</Text>
+                <Text>© 2024 Leonel Ortega</Text>
                 <Stack direction={'row'} spacing={6}>
                     <SocialButton label={'Twitter'} href={'https://twitter.com/leoo_omgg'}>
                         <FaTwitter />
