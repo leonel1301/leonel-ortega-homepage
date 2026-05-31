@@ -10,18 +10,23 @@ import {
 } from '@chakra-ui/react';
 import { Global } from '@emotion/react';
 
-export const GridItem = ({ children, href, title, thumbnail }) => {
+export const GridItem = ({ children, href, title, thumbnail, ratio, objectFit = 'contain' }) => {
+    const imageRatio = ratio ?? thumbnail.width / thumbnail.height;
+
     return (
         <>
             <Box w="100%" align="center">
                 <LinkBox cursor={'pointer'}>
-                    <Image
-                        src={thumbnail}
-                        alt={title}
-                        className="grid-item-image"
-                        loading="lazy"
-                    />
-                    <LinkOverlay href={href} target="_blank">
+                    <AspectRatio maxW="640px" ratio={imageRatio} my={4} mx="auto" w="100%">
+                        <Image
+                            src={thumbnail}
+                            alt={title}
+                            className="grid-item-image"
+                            loading="lazy"
+                            style={{ objectFit }}
+                        />
+                    </AspectRatio>
+                    <LinkOverlay href={href} target="_blank" rel="noopener noreferrer">
                         <Text mt={2}>{title}</Text>
                     </LinkOverlay>
                     <Text fontSize={14}>{children}</Text>
@@ -31,19 +36,22 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
     );
 };
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => {
+export const WorkGridItem = ({ children, id, title, thumbnail, ratio, objectFit = 'cover' }) => {
+    const imageRatio = ratio ?? 1.7;
+
     return (
         <>
             <Box w="100%" align="center">
                 <NexttLink href={`/works/${id}`}>
                     <LinkBox cursor={'pointer'}>
-                        <AspectRatio maxW="640px" ratio={1.7} my={4}>
+                        <AspectRatio maxW="640px" ratio={imageRatio} my={4} mx="auto" w="100%">
                             <Image
                                 src={thumbnail}
                                 alt={title}
                                 loading="lazy"
                                 className="grid-item-image"
                                 placeholder="blur"
+                                style={{ objectFit }}
                             />
                         </AspectRatio>
                         <Text mt={2} fontSize={20} fontWeight="bold">

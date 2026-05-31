@@ -13,17 +13,31 @@ import pokeapi from "../public/images/works/pokeapi.png";
 import rickandmorty from "../public/images/works/rick-and-morty-1.png";
 import smartsprout from "../public/images/works/smartsprout.jpg";
 import belcorp from "../public/images/works/belcorp-hackathon.webp";
+import lenaraLabs from "../public/images/posts/lenara-labs.png";
 import Layout from "../components/layouts/article";
 
 const Works = () => {
   return (
-    <Layout title="Works">
+    <Layout
+      title="Works"
+      description="Selected software projects by Leonel Ortega — web apps, APIs, hackathons, and collaborations."
+    >
       <Container>
         <GridItemsStyle />
         <Heading as={"h3"} mb={4} fontSize="xl">
           Works
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <WorkGridItem
+            id="lenara-labs"
+            title="Lenara Labs"
+            thumbnail={lenaraLabs}
+            ratio={lenaraLabs.width / lenaraLabs.height}
+            objectFit="contain"
+          >
+            My software development company focused on mobile apps and custom
+            software solutions for businesses and startups.
+          </WorkGridItem>
           <WorkGridItem
             id="study-up"
             title="Study Up Landing Page"

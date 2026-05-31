@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { GridItemsStyle } from '../grid-item';
+import SeoHead from '../seo-head';
 
 const variants = {
     hidden: { opacity: 0, x: 0, y: 20 },
@@ -8,7 +9,10 @@ const variants = {
     exit: { opacity: 0, x: 0, y: 20 },
 };
 
-const Layout = ({ children, title }) => {
+const Layout = ({ children, title, description, path }) => {
+    const router = useRouter();
+    const canonicalPath = path ?? router.asPath.split('?')[0].split('#')[0];
+
     return (
         <motion.div
             initial="hidden"
@@ -17,13 +21,11 @@ const Layout = ({ children, title }) => {
             variants={variants}
             transition={{ duration: 0.4, ease: 'easeInOut' }}
         >
-            <>
-                {title && (
-                    <Head>
-                        <title>{title} - Leonel Ortega</title>
-                    </Head>
-                )}
-            </>
+            <SeoHead
+                title={title}
+                description={description}
+                path={canonicalPath}
+            />
             {children}
             <GridItemsStyle />
         </motion.div>

@@ -18,18 +18,19 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { useRouter } from 'next/router';
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue('gray.700', 'gray.400');
+  const activeBg = useColorModeValue('blue.600', 'blue.200');
+  const activeColor = useColorModeValue('white', 'gray.900');
   return (
     <Link
       as={NextLink}
       align="center"
       href={href}
-      bg={active ? useColorModeValue('blue.600', 'blue.200') : undefined}
-      color={active ? useColorModeValue('white', 'gray.900') : inactiveColor}
+      bg={active ? activeBg : undefined}
+      color={active ? activeColor : inactiveColor}
       borderRadius="sm"
       p={2}
     >
@@ -43,7 +44,7 @@ const Navbar = (props) => {
   const linkColor = useColorModeValue('gray.700', 'gray.400');
   const bgColor = useColorModeValue('', '');
   const contentColor = useColorModeValue('gray.800', 'gray.200');
-  const router = useRouter();
+
   return (
     <Box
       position="fixed"

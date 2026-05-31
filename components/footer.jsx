@@ -10,9 +10,12 @@ import {
 import { FaTwitter } from 'react-icons/fa';
 
 const SocialButton = ({ children, label, href }) => {
+    const buttonBg = useColorModeValue('blackAlpha.100', 'whiteAlpha.100');
+    const buttonHoverBg = useColorModeValue('blackAlpha.200', 'whiteAlpha.200');
+
     return (
         <chakra.button
-            bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+            bg={buttonBg}
             rounded={'full'}
             w={8}
             h={8}
@@ -24,7 +27,7 @@ const SocialButton = ({ children, label, href }) => {
             justifyContent={'center'}
             transition={'background 0.3s ease'}
             _hover={{
-                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                bg: buttonHoverBg,
             }}
         >
             <VisuallyHidden>{label}</VisuallyHidden>
@@ -34,8 +37,10 @@ const SocialButton = ({ children, label, href }) => {
 };
 
 function Footer() {
+    const footerColor = useColorModeValue('gray.700', 'gray.200');
+
     return (
-        <Box mt={8} color={useColorModeValue('gray.700', 'gray.200')}>
+        <Box mt={8} color={footerColor}>
             <Container
                 as={Stack}
                 maxW={'container.md'}
@@ -47,7 +52,7 @@ function Footer() {
                 color="gray.500"
                 fontSize={'0.8rem'}
             >
-                <Text>© 2024 Leonel Ortega</Text>
+                <Text>© 2026 Leonel Ortega</Text>
                 <Stack direction={'row'} spacing={6}>
                     <SocialButton label={'Twitter'} href={'https://twitter.com/leoo_omgg'}>
                         <FaTwitter />

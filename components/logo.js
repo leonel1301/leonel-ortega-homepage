@@ -26,13 +26,14 @@ const LogoBox = styled.span`
 `;
 
 const Logo = () => {
+  const logoColor = useColorModeValue('gray.700', 'whiteAlpha.900');
 
   return (
     <Link href="/">
       <LogoBox>
 
         <Text
-          color={useColorModeValue('gray.700', 'whiteAlpha.900')}
+          color={logoColor}
           ml={3}
           fontSize="2xl"
           fontFamily="Poppins"
